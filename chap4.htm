@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>4장 커밋 ver 1.0</title>
+    </head>
+    <body>
+        <h1>
+            깃 상태 개념
+        </h1>
+        <p>1. 소스 작성 or 수정하면 워킹디렉터리 이동 </p>
+        <p>2. git add하면 스테이지 이동 tracked 상태(stage 상태)</p>
+        <p>3. 작성 or 수정하면 modified로 unstage 상태 </p>
+        <p>4. unstage 상태에서 다시 git add 후, 커밋! </p>
+        <p>* untracked 상태의 워킹디렉터리 속 파일은 untracked 상태 & unstage 상태 </p>
+
+        <h1>
+            커밋
+        </h1>
+        <p>git rm --cached 파일이름 : 스테이지 삭제</p>
+        <p>git reset HEAD 파일이름 : 커밋 후 스테이지 삭제</p>
+        <p>git mv "파일 이름" "새파일 이름" : "mv -> git rm 파일 이름 -> git add 새파일 이름"의 과정을 줄인 것</p>
+        <p>git commit -a : git add 깜빡했을 때 한번에 전부 add 하기</p>
+        <p>git log : 커밋 기록 보기 -> 소스트리가 가독성 더 좋음</p>
+        <p>git checkout -- 파일이름 : 커밋 전에 수정하다가 잘못 수정시 수정 전으로 되돌리기</p>
+        <p>git commit -m "커밋메시지" : 커밋하면서 커밋 메시지 넣기</p>
+        <p>git commit -am : 파일들을 한번에 스테이지에 등록하고 한번에 하나의 커밋 메세지로 커밋</p>
+        <p>-a 옵션 : 이미 추적된 파일 상태가 변경되었을 때만 -m과 함께 사용 가능 (* 저장소를 새로 생성하고 새 파일을 작성한 후라면 커밋 불가능, 새로 생성한 파일 git add 해줄 것)</p>
+    </body>
+</html>
