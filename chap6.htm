@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>6장. 브랜치 ver 1.0</title>
+        <title>6장. 브랜치 ver 2.0</title>
     </head>
     <body>
         <h1>
@@ -34,7 +34,7 @@
         <p>git log -p : diff 기능</p>
         <p>git log --stat : 수정된 부분 출력</p>
         <p>git diff : 스테이지(a) vs 워킹 디렉터리(b) 비교 내용 출력</p>
-        <p>git diff head : 최신 커밋과 변경 내용을 비교 (* HEAD는 마지막 커핏을 가지고 있는 포인터)</p>
+        <p>git diff head : 최신 커밋과 변경 내용을 비교 (* HEAD는 마지막 커밋을 가지고 있는 포인터)</p>
         <p>git commit -v : 커밋할 때, diff 내용을 커밋 메시지를 입력하는 vi 에디터에 출력해줘서 diff 내용을 커밋 메시지로 이용할 수 있다.</p>
 
         <h1>
@@ -67,5 +67,9 @@
         </h1>
         <p>git branch 브랜치이름 커밋ID : 브랜치 생성</p>
         <p>git log --graph --all : 브랜치 흐름을 포함한 작업한 로그 기록 확인</p>
+        <p>git show-branch --more=출력할커밋수 : 출력될 커밋 개수 제한</p>
+        <p>cat 파일이름 : 소스 코드 내용 확인</p>
+        <h3>HEAD 개념</h3>
+        <p>1. 브랜치가 여러개면 HEAD도 여러개다. HEAD는 브랜치마다 마지막 커밋 ID를 가리키는 포인터</p>
     </body>
 </html>
